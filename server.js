@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'client')));
 // ROUTES ------------------------------
 //You need a new "Route" for every "Page" Routes = Pages in this scenario
 
-app.get('/', async (req, res) => {
+app.get('/views/', async (req, res) => {
     //the "res.render" will look for the string "index.ejs" (of the same name in "views" folder)
     res.render('index', {
         //whatever is in this object will get sent down to your ejs file
@@ -38,7 +38,7 @@ app.get('/', async (req, res) => {
     });
 });
 
-app.get('/about', async (req, res) => {
+app.get('/views/about', async (req, res) => {
     //the "res.render" will look for the string "index.ejs" (of the same name in "views" folder)
     res.render('about', {
         //whatever is in this object will get sent down to your ejs file
@@ -46,13 +46,13 @@ app.get('/about', async (req, res) => {
     });
 });
 
-app.get('/contact', async (req, res) => {
+app.get('/views/contact', async (req, res) => {
     res.render('contact', {
         title:'Contact'
     });
 });
 
-app.get('/portfolio', async (req, res) => {
+app.get('/views/portfolio', async (req, res) => {
     res.render('portfolio', {
         title:'Portfolio'
     });
