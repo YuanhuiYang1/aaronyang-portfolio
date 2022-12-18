@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs', { title: title }); -%>
+
+<body>
+    <%- include('partials/nav.ejs'); -%>
+
+    <main id="main">
+
+        <!-- ======= Works Section ======= -->
+        <section class="section site-portfolio">
+          <div class="container">
+            <div class="row mb-5 align-items-center">
+              <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+                <h2>Hey, I'm Aaron Yang</h2>
+                <p class="mb-0">Freelance Creative &amp; UIUX Designer</p>
+              </div>
+              <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
+                <div id="filters" class="filters">
+                  <a href="/" data-filter="*" class="active">Home</a>
+                  <a href="/contact" data-filter=".design">Contact</a>
+                  <a href="/About" data-filter=".branding">About</a>
+                  <a href="/Portfolio" data-filter=".photography">Portfolio</a>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+              <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="/portfolio/item1" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>GOPOOL</h3>
+                    <span>App Design</span>
+                  </div>
+                  <img class="img-fluid" src="/img/Artboard 1.png">
+                </a>
+              </div>
+              <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="/portfolio/item2" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Cake Lab</h3>
+                    <span>App Design</span>
+                  </div>
+                  <img class="img-fluid" src="/img/Cakelab.png">
+                </a>
+              </div>
+              <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                <a href="/portfolio/item3" class="item-wrap fancybox">
+                  <div class="work-info">
+                    <h3>Photography</h3>
+                    <span>Photos in Real Life</span>
+                  </div>
+
+                <!--AARON DELETE ME - ADD IMAGE FOR PHOTOGRAPHY PORTFOLIO ITEM HERE-->                
+
+                  <img class="img-fluid" src="/img/">
+                </a>
+              </div>
+             
+            </div>
+          </div>
+        </section><!-- End  Works Section -->
+    
+       
+    
+        <!-- ======= Services Section ======= -->
+        <section class="section services">
+          <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+              <div class="col-5">
+                <h3 class="h3 heading">My Services</h3>
+                <p>I am helping create products that are easy to use, aesthetically pleasing, and effective in achieving the goals of the users and the business. </p>
+              </div>
+            </div>
+            
+        </section><!-- End Services Section -->
+    
+    
+    
+    
+      </main><!-- End #main -->
+  
+  
+
+    <%- include('partials/footer.ejs'); -%>
+
+</body>
+
+</html>
